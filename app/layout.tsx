@@ -14,6 +14,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://themnemosyne.io"),
   title: "Mnemosyne | Semantic Memory Governance Infrastructure",
   description:
     "Infrastructure that prevents AI from contradicting itself. VL-JEPA semantic prediction gives your AI systems meaning custody—storing meaning, not just text.",
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
     title: "Mnemosyne | Semantic Memory Governance Infrastructure",
     description:
       "Infrastructure that prevents AI from contradicting itself through VL-JEPA semantic prediction.",
-    url: "https://mnemosyne.app",
+    url: "https://themnemosyne.io",
     siteName: "Mnemosyne",
     type: "website",
   },
