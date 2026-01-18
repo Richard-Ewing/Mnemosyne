@@ -26,17 +26,6 @@ const nextConfig: NextConfig = {
         destination: "https://themnemosyne.io/:path*",
         permanent: true,
       },
-      {
-        source: "/:path*",
-        has: [
-          {
-            type: "host",
-            value: "www.themnemosyne.io",
-          },
-        ],
-        destination: "https://themnemosyne.io/:path*",
-        permanent: true,
-      },
     ];
   },
 };
