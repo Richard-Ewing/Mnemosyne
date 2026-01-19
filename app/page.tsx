@@ -34,7 +34,7 @@ export default function Home() {
             <Capsule glow className="inline-flex items-center gap-2 mb-8">
               <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
               <span className="text-sm text-gray-200">
-                Enterprise-grade security • AES-256 encryption • SOC 2–ready
+                Strong encryption at rest and in transit • AES-256–grade • SOC 2–ready architecture
               </span>
             </Capsule>
           </BlurIn>
@@ -114,8 +114,8 @@ export default function Home() {
                 <span className="text-gray-200 font-medium">That&apos;s how hallucinations happen.</span>
               </p>
               <p className="text-lg text-gray-300">
-                Mnemosyne reduces hallucinations by eliminating silent context loss
-                and exposing contradictions in what an AI has previously accepted as true.
+                Mnemosyne reduces hallucinations caused by silent context loss and conflicting memory,
+                exposing contradictions before they silently compound.
               </p>
               <p className="text-base text-gray-400 mt-6">
                 It does this by maintaining a <span className="text-violet-300">semantic ledger of meaning</span>,
@@ -246,7 +246,7 @@ export default function Home() {
             <div className="text-center">
               <div className="capsule inline-block mb-4 text-violet-300">Developers</div>
               <p className="text-gray-200">
-                Building agents and AI products that cannot afford hallucinations
+                Building agents and AI products that need provenance and conflict visibility
               </p>
               <Link href="/for-developers" className="inline-block mt-4 text-violet-400 hover:text-violet-300 transition-colors">
                 Learn more →
@@ -275,7 +275,7 @@ export default function Home() {
                 Get <SparklesText className="gradient-text">Early Access</SparklesText>
               </h2>
               <p className="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
-                Be among the first to experience semantic memory governance.
+                Be among the first to experience deterministic context governance.
                 Limited spots available.
               </p>
 

@@ -71,7 +71,7 @@ export default function WhatMnemosyneIs() {
                             <ul className="space-y-4">
                                 {[
                                     "A semantic ledger",
-                                    "Trust infrastructure",
+                                    "Deterministic enforcement infrastructure",
                                     "Model-agnostic",
                                     "User-controlled",
                                     "Auditable by design",

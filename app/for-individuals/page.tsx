@@ -55,7 +55,7 @@ export default function ForIndividuals() {
                         </ul>
                         <div className="mt-8 pt-6 border-t border-white/10 text-center">
                             <p className="text-xl text-gray-200 font-medium">
-                                This is <span className="gradient-text">trust</span> for everyday AI use.
+                                This is <span className="gradient-text">governed context</span> for everyday AI use.
                             </p>
                         </div>
                     </GlowCard>

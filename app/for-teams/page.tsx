@@ -12,7 +12,7 @@ const useCases = [
     {
         icon: "🛡️",
         title: "Compliance and Risk Reduction",
-        description: "Reduce hallucination risk with auditable semantic governance.",
+        description: "Reduce hallucination risk with auditable, governed semantic context.",
     },
     {
         icon: "🔗",
@@ -44,8 +44,8 @@ export default function ForTeams() {
                         <span className="gradient-text">for AI Systems</span>
                     </h1>
                     <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                        Mnemosyne provides a governed semantic ledger layer that reduces hallucination risk
-                        by eliminating silent context loss and exposing contradictions before they compound.
+                        Mnemosyne provides a governed semantic ledger layer that reduces hallucination risk caused by
+                        silent context loss, exposing contradictions before they compound.
                     </p>
                 </AnimatedSection>
             </section>
@@ -113,7 +113,7 @@ export default function ForTeams() {
                                 <Link href="/#early-access" className="btn-primary">
                                     Contact Sales
                                 </Link>
-                                <Link href="/security-and-compliance" className="btn-secondary">
+                                <Link href="/security" className="btn-secondary">
                                     Security & Compliance
                                 </Link>
                             </div>

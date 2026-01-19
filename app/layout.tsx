@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://themnemosyne.app"),
   title: "Mnemosyne | A Semantic Ledger for AI Trust",
   description:
-    "Mnemosyne reduces AI hallucinations by eliminating silent context loss and exposing contradictions using a governed semantic ledger of meaning.",
+    "Mnemosyne reduces AI hallucinations caused by silent context loss and exposes contradictions using a governed semantic ledger of meaning.",
   keywords: [
     "semantic ledger",
     "AI trust",
@@ -73,7 +73,7 @@ export default function RootLayout({
               "@id": "https://themnemosyne.app/#organization",
               "name": "Mnemosyne",
               "url": "https://themnemosyne.app",
-              "description": "Mnemosyne builds semantic ledger infrastructure that records, governs, and audits meaning over time to reduce AI hallucinations.",
+              "description": "Mnemosyne builds semantic ledger infrastructure that records, governs, and audits meaning over time. Reduces AI hallucinations caused by silent context loss.",
               "foundingDate": "2026",
             }),
           }}
@@ -118,7 +118,7 @@ export default function RootLayout({
                   "name": "How does Mnemosyne reduce hallucinations?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Mnemosyne reduces hallucinations by eliminating silent context loss and exposing contradictions in what an AI has previously accepted as true.",
+                    "text": "Mnemosyne reduces hallucinations caused by silent context loss and conflicting memory by exposing contradictions before they silently compound.",
                   },
                 },
                 {
@@ -164,7 +164,7 @@ export default function RootLayout({
 
             <div className="flex items-center gap-4">
               <Link
-                href="/security-and-compliance"
+                href="/security"
                 className="text-sm text-gray-400 hover:text-white transition-colors hidden md:inline"
               >
                 Security
@@ -240,7 +240,7 @@ export default function RootLayout({
                 <ul className="space-y-2 text-sm text-gray-400">
                   <li><Link href="/privacy" className="hover:text-white transition-colors">Privacy</Link></li>
                   <li><Link href="/terms" className="hover:text-white transition-colors">Terms</Link></li>
-                  <li><Link href="/security-and-compliance" className="hover:text-white transition-colors">Security</Link></li>
+                  <li><Link href="/security" className="hover:text-white transition-colors">Security</Link></li>
                 </ul>
               </div>
             </div>
@@ -254,7 +254,7 @@ export default function RootLayout({
                 <span>•</span>
                 <a href="/terms" className="hover:text-white transition-colors">Terms</a>
                 <span>•</span>
-                <a href="/security-and-compliance" className="hover:text-white transition-colors">Security</a>
+                <a href="/security" className="hover:text-white transition-colors">Security</a>
               </div>
             </div>
           </div>

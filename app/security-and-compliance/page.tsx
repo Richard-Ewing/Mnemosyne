@@ -6,7 +6,7 @@ import Link from "next/link";
 const guarantees = [
     { statement: "No training on customer data", icon: "🚫" },
     { statement: "User-initiated ingestion only", icon: "👆" },
-    { statement: "End-to-end encryption (AES-256 at rest, TLS in transit)", icon: "🔐" },
+    { statement: "Strong encryption at rest and in transit (AES-256–grade)", icon: "🔐" },
     { statement: "Immutable audit logs", icon: "📋" },
     { statement: "Full export and deletion rights", icon: "📤" },
 ];
@@ -81,10 +81,10 @@ export default function SecurityAndCompliance() {
                         Ready for Enterprise
                     </h2>
                     <div className="flex flex-wrap justify-center gap-4">
-                        <Capsule className="text-gray-200">SOC 2 Ready</Capsule>
-                        <Capsule className="text-gray-200">GDPR Compliant</Capsule>
-                        <Capsule className="text-gray-200">AES-256 Encryption</Capsule>
-                        <Capsule className="text-gray-200">TLS 1.3</Capsule>
+                        <Capsule className="text-gray-200">SOC 2–Ready Architecture</Capsule>
+                        <Capsule className="text-gray-200">GDPR Ready</Capsule>
+                        <Capsule className="text-gray-200">AES-256–grade</Capsule>
+                        <Capsule className="text-gray-200">TLS 1.2+</Capsule>
                     </div>
                 </AnimatedSection>
             </section>
