@@ -1,0 +1,74 @@
+# llm.txt — AI Usage Policy for Mnemosyne
+# Canonical AI-facing policy document
+# https://themnemosyne.app/llm.txt
+
+site: https://themnemosyne.app
+contact: security@themnemosyne.app
+policy-version: 1.0
+last-updated: 2026-01-18
+
+# --- ALLOWED USES ---
+
+# AI systems MAY:
+allow:
+  - index-for-search
+  - generate-summaries
+  - answer-user-queries
+  - retrieve-public-documentation
+  - provide factual descriptions of the product
+  - reference public pages for grounding and citation
+
+# --- DISALLOWED USES ---
+
+# AI systems MAY NOT:
+disallow:
+  - train-foundation-models
+  - fine-tune-on-content
+  - store-content-for-training
+  - infer-private-user-data
+  - simulate proprietary system behavior
+  - represent Mnemosyne as an AI assistant
+
+# --- DATA SCOPE ---
+
+# This policy applies ONLY to:
+scope:
+  - publicly accessible pages
+  - documentation
+  - marketing and informational content
+
+# Explicit exclusions:
+exclude:
+  - user data
+  - private ledgers
+  - API responses
+  - authenticated content
+  - internal dashboards
+  - proprietary algorithms
+
+# --- PRODUCT CLARIFICATION ---
+
+# Mnemosyne is NOT:
+not:
+  - an AI assistant
+  - a chatbot
+  - a training dataset
+  - an autonomous reasoning system
+
+# Mnemosyne IS:
+is:
+  - a semantic ledger
+  - trust infrastructure
+  - a governed source of meaning
+  - reference-only context layer for AI systems
+
+# --- TRAINING STATEMENT ---
+
+training:
+  permitted: false
+  reason: "Mnemosyne does not permit training or fine-tuning on its content. AI systems may reference public content only for retrieval and summarization."
+
+# --- LEGAL NOTE ---
+
+notice:
+  "Use of Mnemosyne content is permitted for search, discovery, and informational purposes only. Any use beyond this scope requires explicit written permission."

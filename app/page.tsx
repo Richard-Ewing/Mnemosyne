@@ -1,282 +1,303 @@
+"use client";
+
+import { AnimatedSection, Capsule, GlowCard } from "./components/animations";
+import {
+  SparklesText,
+  WordRotate,
+  ShineBorder,
+  Particles,
+  BlurIn,
+  AnimatedGradientText,
+  BorderBeam,
+  NumberTicker,
+  PulsatingButton
+} from "./components/magic-ui";
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="relative">
+      {/* Floating Particles - Creates premium atmosphere */}
+      <Particles count={40} className="fixed inset-0 z-0" />
+
       {/* Background Effects */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
         <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-violet-500/20 rounded-full blur-[128px]" />
         <div className="absolute top-1/4 right-1/4 w-[400px] h-[400px] bg-fuchsia-500/15 rounded-full blur-[100px]" />
-        <div className="absolute bottom-0 left-1/2 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[120px]" />
+        <div className="absolute bottom-1/3 left-1/2 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[120px]" />
       </div>
 
       {/* Hero Section */}
-      <section className="relative max-w-7xl mx-auto px-6 py-24 md:py-32">
+      <section className="relative z-10 section max-w-7xl mx-auto px-6 pt-24 md:pt-32">
         <div className="text-center max-w-4xl mx-auto">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8">
-            <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-            <span className="text-sm text-gray-300">
-              VL-JEPA Powered Semantic Infrastructure
-            </span>
-          </div>
+          <BlurIn delay={0}>
+            <Capsule glow className="inline-flex items-center gap-2 mb-8">
+              <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+              <span className="text-sm text-gray-200">
+                Enterprise-grade security • AES-256 encryption • SOC 2–ready
+              </span>
+            </Capsule>
+          </BlurIn>
 
-          {/* Headline */}
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
-            <span className="bg-gradient-to-r from-white via-white to-gray-400 bg-clip-text text-transparent">
-              Infrastructure That Prevents AI
-            </span>
-            <br />
-            <span className="bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent">
-              From Contradicting Itself
-            </span>
-          </h1>
+          <BlurIn delay={0.2}>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-tight">
+              <span className="bg-gradient-to-r from-white via-white to-gray-400 bg-clip-text text-transparent">
+                A Semantic Ledger for
+              </span>
+              <br />
+              {/* SparklesText - Creates excitement on key phrase */}
+              <SparklesText className="gradient-text text-5xl sm:text-6xl md:text-8xl">
+                AI Trust
+              </SparklesText>
+            </h1>
+          </BlurIn>
 
-          {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed">
-            <strong className="text-white">Meaning Custody</strong> — VL-JEPA
-            semantic prediction stores{" "}
-            <em className="text-violet-300">meaning</em>, not just text.
-            <br className="hidden md:block" />
-            Your AI systems never forget what matters.
-          </p>
+          <BlurIn delay={0.4}>
+            <p className="text-lg md:text-xl text-gray-200 mb-4 max-w-3xl mx-auto leading-relaxed">
+              Give Your AI a Source of{" "}
+              {/* WordRotate - Keeps attention, shows versatility */}
+              <WordRotate
+                words={["Meaning", "Context", "Truth", "Memory"]}
+                className="text-violet-300 font-semibold"
+              />{" "}
+              It Can Reference Over Time
+            </p>
+            <p className="text-base md:text-lg text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
+              Mnemosyne maintains a private, governed semantic ledger that records what an AI
+              has previously accepted as true, preserves meaning across conversations and models,
+              and exposes contradictions before they silently compound.
+            </p>
+          </BlurIn>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="#early-access"
-              className="px-8 py-4 rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-600 text-lg font-semibold hover:from-violet-500 hover:to-fuchsia-500 transition-all shadow-2xl shadow-violet-500/30 hover:shadow-violet-500/50 hover:scale-105"
-            >
-              Request Early Access
-            </a>
-            <a
-              href="#how-it-works"
-              className="px-8 py-4 rounded-full border border-white/20 text-lg font-medium hover:bg-white/5 transition-all"
-            >
-              See How It Works
-            </a>
-          </div>
+          <BlurIn delay={0.5}>
+            <div className="flex flex-wrap items-center justify-center gap-3 text-sm text-gray-300 mb-8">
+              <span className="capsule">No training on your data</span>
+              <span className="capsule">No assistants</span>
+              <span className="capsule">Your ledger. Your authority.</span>
+            </div>
+          </BlurIn>
 
-          {/* Trust Indicator */}
-          <p className="mt-12 text-sm text-gray-500">
-            Enterprise-grade security • AES-256 encryption • SOC 2 ready
-          </p>
+          <BlurIn delay={0.6}>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              {/* ShineBorder - Premium CTA that demands attention */}
+              <ShineBorder duration={2}>
+                <Link href="#early-access" className="block px-8 py-4 text-lg font-semibold text-white">
+                  Get Early Access
+                </Link>
+              </ShineBorder>
+              <Link href="/how-it-works" className="btn-secondary text-lg">
+                See How It Works
+              </Link>
+            </div>
+          </BlurIn>
         </div>
       </section>
 
-      {/* How VL-JEPA Works Section */}
-      <section id="how-it-works" className="relative max-w-7xl mx-auto px-6 py-24">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">
-            How{" "}
-            <span className="bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent">
-              VL-JEPA
-            </span>{" "}
-            Works
-          </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Traditional memory stores text. Mnemosyne stores semantic meaning
-            through predictive representation learning.
-          </p>
-        </div>
-
-        {/* Comparison Cards */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {/* Traditional Approach */}
-          <div className="relative p-8 rounded-2xl bg-white/5 border border-white/10">
-            <div className="absolute top-0 right-0 px-4 py-2 rounded-bl-2xl rounded-tr-2xl bg-red-500/20 text-red-300 text-sm font-medium">
-              Traditional
-            </div>
-            <h3 className="text-2xl font-semibold mb-6 text-gray-300">
-              Vector Databases
-            </h3>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <span className="mt-1 text-red-400">✗</span>
-                <span className="text-gray-400">
-                  Stores raw text embeddings without semantic context
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="mt-1 text-red-400">✗</span>
-                <span className="text-gray-400">
-                  No conflict detection—contradictions accumulate silently
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="mt-1 text-red-400">✗</span>
-                <span className="text-gray-400">
-                  Static snapshots that decay without reinforcement
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="mt-1 text-red-400">✗</span>
-                <span className="text-gray-400">
-                  No audit trail for knowledge provenance
-                </span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Mnemosyne Approach */}
-          <div className="relative p-8 rounded-2xl bg-gradient-to-br from-violet-500/10 to-fuchsia-500/10 border border-violet-500/30 shadow-lg shadow-violet-500/10">
-            <div className="absolute top-0 right-0 px-4 py-2 rounded-bl-2xl rounded-tr-2xl bg-violet-500/30 text-violet-200 text-sm font-medium">
-              Mnemosyne
-            </div>
-            <h3 className="text-2xl font-semibold mb-6 text-white">
-              VL-JEPA Semantic Prediction
-            </h3>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <span className="mt-1 text-green-400">✓</span>
-                <span className="text-gray-200">
-                  Predictive embeddings capture semantic relationships
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="mt-1 text-green-400">✓</span>
-                <span className="text-gray-200">
-                  Active Truth Arbitration detects and resolves conflicts
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="mt-1 text-green-400">✓</span>
-                <span className="text-gray-200">
-                  Cognitive entropy models knowledge decay and reinforcement
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="mt-1 text-green-400">✓</span>
-                <span className="text-gray-200">
-                  Immutable audit logs for complete provenance tracking
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* Technology Moat Section */}
-      <section className="relative max-w-7xl mx-auto px-6 py-24">
-        <div className="text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/30 mb-8">
-            <span className="text-amber-400">⚡</span>
-            <span className="text-sm text-amber-300">Technology Moat</span>
-          </div>
+      {/* Why This Exists Section */}
+      <section className="relative z-10 section max-w-7xl mx-auto px-6">
+        <AnimatedSection className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-amber-300 to-orange-400 bg-clip-text text-transparent">
-              12–18 Months
-            </span>
-            <br />
-            <span className="text-white">To Replicate</span>
+            Why This <AnimatedGradientText>Exists</AnimatedGradientText>
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            VL-JEPA requires deep integration of visual-language joint embedding
-            predictive architectures. This isn&apos;t a wrapper—it&apos;s infrastructure.
-          </p>
-        </div>
+        </AnimatedSection>
 
-        {/* Feature Grid */}
-        <div className="grid md:grid-cols-3 gap-6 mt-16 max-w-5xl mx-auto">
-          <div className="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-violet-500/50 transition-colors group">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <span className="text-2xl">🔐</span>
+        <AnimatedSection delay={0.1}>
+          {/* BorderBeam - Draws eye to important content */}
+          <BorderBeam className="max-w-4xl mx-auto">
+            <div className="p-8 md:p-12 text-center">
+              <p className="text-2xl md:text-3xl font-semibold text-gray-100 mb-6">
+                AI systems lose context.
+              </p>
+              <p className="text-lg text-gray-300 mb-6">
+                When context disappears, contradictions accumulate silently.
+                <br />
+                <span className="text-gray-200 font-medium">That&apos;s how hallucinations happen.</span>
+              </p>
+              <p className="text-lg text-gray-300">
+                Mnemosyne reduces hallucinations by eliminating silent context loss
+                and exposing contradictions in what an AI has previously accepted as true.
+              </p>
+              <p className="text-base text-gray-400 mt-6">
+                It does this by maintaining a <span className="text-violet-300">semantic ledger of meaning</span>,
+                with provenance, decay, and auditability.
+              </p>
             </div>
-            <h3 className="text-lg font-semibold mb-2">Meaning Custody</h3>
-            <p className="text-gray-400 text-sm">
-              Semantic ownership of your AI&apos;s knowledge. Not just storage—governance.
-            </p>
-          </div>
-          <div className="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-violet-500/50 transition-colors group">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <span className="text-2xl">⚖️</span>
+          </BorderBeam>
+        </AnimatedSection>
+      </section>
+
+      {/* Stats Section - NumberTicker creates credibility */}
+      <section className="relative z-10 py-16 max-w-7xl mx-auto px-6">
+        <AnimatedSection>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+              <div className="text-4xl md:text-5xl font-bold gradient-text">
+                <NumberTicker value={99} />%
+              </div>
+              <p className="text-gray-400 mt-2">Conflict Detection</p>
             </div>
-            <h3 className="text-lg font-semibold mb-2">Truth Arbitration</h3>
-            <p className="text-gray-400 text-sm">
-              Automatic detection and resolution of conflicting facts. You decide what&apos;s true.
-            </p>
-          </div>
-          <div className="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-violet-500/50 transition-colors group">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <span className="text-2xl">📊</span>
+            <div>
+              <div className="text-4xl md:text-5xl font-bold gradient-text">
+                &lt;<NumberTicker value={50} delay={200} />ms
+              </div>
+              <p className="text-gray-400 mt-2">Query Latency</p>
             </div>
-            <h3 className="text-lg font-semibold mb-2">Cognitive Topology</h3>
-            <p className="text-gray-400 text-sm">
-              Visualize knowledge health, decay patterns, and reinforcement needs.
-            </p>
+            <div>
+              <div className="text-4xl md:text-5xl font-bold gradient-text">
+                <NumberTicker value={256} delay={400} />-bit
+              </div>
+              <p className="text-gray-400 mt-2">Encryption</p>
+            </div>
+            <div>
+              <div className="text-4xl md:text-5xl font-bold gradient-text">
+                <NumberTicker value={100} delay={600} />%
+              </div>
+              <p className="text-gray-400 mt-2">Auditability</p>
+            </div>
           </div>
+        </AnimatedSection>
+      </section>
+
+      {/* Outcomes Section */}
+      <section className="relative z-10 section max-w-7xl mx-auto px-6">
+        <AnimatedSection className="text-center mb-16">
+          <Capsule className="mb-6 text-sm text-gray-300">Outcomes, Not Features</Capsule>
+          <h2 className="text-3xl md:text-5xl font-bold">
+            What You <AnimatedGradientText>Get</AnimatedGradientText>
+          </h2>
+        </AnimatedSection>
+
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <AnimatedSection delay={0.1}>
+            <GlowCard className="text-center h-full">
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center mx-auto mb-6">
+                <span className="text-3xl">🔍</span>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-100 mb-3">Trust</h3>
+              <p className="text-gray-300">
+                See what your AI is basing its answers on.
+              </p>
+            </GlowCard>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.2}>
+            {/* BorderBeam on middle card - highlights most important */}
+            <BorderBeam className="h-full">
+              <div className="p-6 md:p-8 text-center h-full">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center mx-auto mb-6">
+                  <span className="text-3xl">🔗</span>
+                </div>
+                <h3 className="text-xl font-semibold text-gray-100 mb-3">Continuity</h3>
+                <p className="text-gray-300">
+                  Meaning persists across sessions, tools, and models.
+                </p>
+              </div>
+            </BorderBeam>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.3}>
+            <GlowCard className="text-center h-full">
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center mx-auto mb-6">
+                <span className="text-3xl">⚖️</span>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-100 mb-3">Accountability</h3>
+              <p className="text-gray-300">
+                Contradictions are surfaced instead of hidden.
+              </p>
+            </GlowCard>
+          </AnimatedSection>
         </div>
       </section>
 
-      {/* User Authority Section */}
-      <section className="relative max-w-7xl mx-auto px-6 py-24">
-        <div className="relative p-12 rounded-3xl bg-gradient-to-br from-violet-500/5 to-fuchsia-500/5 border border-white/10 overflow-hidden">
-          {/* Decorative Elements */}
-          <div className="absolute top-0 right-0 w-64 h-64 bg-violet-500/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 left-0 w-48 h-48 bg-fuchsia-500/10 rounded-full blur-3xl" />
-
-          <div className="relative text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              Your Knowledge.{" "}
-              <span className="bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent">
-                Your Authority.
-              </span>
-            </h2>
-            <p className="text-xl text-gray-400 mb-8">
-              Mnemosyne puts you in control. Every decision about what your AI
-              remembers, forgets, or believes—that&apos;s your call. We just make it
-              possible.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm">
-              <span className="px-4 py-2 rounded-full bg-white/5 border border-white/10">
-                ✓ Self-hosted option
-              </span>
-              <span className="px-4 py-2 rounded-full bg-white/5 border border-white/10">
-                ✓ End-to-end encryption
-              </span>
-              <span className="px-4 py-2 rounded-full bg-white/5 border border-white/10">
-                ✓ Data export anytime
-              </span>
-              <span className="px-4 py-2 rounded-full bg-white/5 border border-white/10">
-                ✓ GDPR compliant
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Early Access CTA */}
-      <section id="early-access" className="relative max-w-7xl mx-auto px-6 py-24">
-        <div className="text-center max-w-2xl mx-auto">
+      {/* Who This Is For Section */}
+      <section className="relative z-10 section max-w-7xl mx-auto px-6">
+        <AnimatedSection className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Join the{" "}
-            <span className="bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent">
-              Early Access
-            </span>
+            Who This Is <AnimatedGradientText>For</AnimatedGradientText>
           </h2>
-          <p className="text-xl text-gray-400 mb-10">
-            Be among the first to experience semantic memory governance.
-            Limited spots available.
-          </p>
+        </AnimatedSection>
 
-          {/* Email Form */}
-          <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="flex-1 px-6 py-4 rounded-full bg-white/5 border border-white/20 text-white placeholder:text-gray-500 focus:outline-none focus:border-violet-500 focus:ring-2 focus:ring-violet-500/20 transition-all"
-              required
-            />
-            <button
-              type="submit"
-              className="px-8 py-4 rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-600 font-semibold hover:from-violet-500 hover:to-fuchsia-500 transition-all shadow-lg shadow-violet-500/25 hover:shadow-violet-500/40 whitespace-nowrap"
-            >
-              Get Access
-            </button>
-          </form>
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <AnimatedSection delay={0.1} animation="fade-left">
+            <div className="text-center">
+              <div className="capsule inline-block mb-4 text-violet-300">Individuals</div>
+              <p className="text-gray-200">
+                Who use AI daily and want continuity and trust
+              </p>
+              <Link href="/for-individuals" className="inline-block mt-4 text-violet-400 hover:text-violet-300 transition-colors">
+                Learn more →
+              </Link>
+            </div>
+          </AnimatedSection>
 
-          <p className="mt-6 text-sm text-gray-500">
-            No spam. Unsubscribe anytime. We respect your inbox.
-          </p>
+          <AnimatedSection delay={0.2}>
+            <div className="text-center">
+              <div className="capsule inline-block mb-4 text-violet-300">Teams</div>
+              <p className="text-gray-200">
+                That require auditability and risk reduction
+              </p>
+              <Link href="/for-teams" className="inline-block mt-4 text-violet-400 hover:text-violet-300 transition-colors">
+                Learn more →
+              </Link>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.3} animation="fade-right">
+            <div className="text-center">
+              <div className="capsule inline-block mb-4 text-violet-300">Developers</div>
+              <p className="text-gray-200">
+                Building agents and AI products that cannot afford hallucinations
+              </p>
+              <Link href="/for-developers" className="inline-block mt-4 text-violet-400 hover:text-violet-300 transition-colors">
+                Learn more →
+              </Link>
+            </div>
+          </AnimatedSection>
         </div>
+
+        <AnimatedSection delay={0.4} className="text-center mt-16">
+          <p className="text-xl text-gray-300">
+            One ledger. <AnimatedGradientText className="font-semibold">Multiple access modes.</AnimatedGradientText>
+          </p>
+        </AnimatedSection>
+      </section>
+
+      {/* CTA Section */}
+      <section id="early-access" className="relative z-10 section max-w-7xl mx-auto px-6">
+        <AnimatedSection>
+          <div className="relative p-12 md:p-16 rounded-3xl bg-gradient-to-br from-violet-500/10 to-fuchsia-500/10 border border-white/10 overflow-hidden text-center">
+            <Particles count={20} />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-violet-500/10 rounded-full blur-3xl" />
+            <div className="absolute bottom-0 left-0 w-48 h-48 bg-fuchsia-500/10 rounded-full blur-3xl" />
+
+            <div className="relative z-10">
+              <h2 className="text-3xl md:text-5xl font-bold mb-6">
+                Get <SparklesText className="gradient-text">Early Access</SparklesText>
+              </h2>
+              <p className="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
+                Be among the first to experience semantic memory governance.
+                Limited spots available.
+              </p>
+
+              <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="flex-1 px-6 py-4 rounded-full bg-white/5 border border-white/20 text-gray-100 placeholder:text-gray-500 focus:outline-none focus:border-violet-500 focus:ring-2 focus:ring-violet-500/20 transition-all"
+                  required
+                />
+                {/* PulsatingButton - Creates urgency */}
+                <PulsatingButton className="whitespace-nowrap">
+                  Get Access
+                </PulsatingButton>
+              </form>
+
+              <p className="mt-6 text-sm text-gray-400">
+                No spam. Unsubscribe anytime. We respect your inbox.
+              </p>
+            </div>
+          </div>
+        </AnimatedSection>
       </section>
     </div>
   );
