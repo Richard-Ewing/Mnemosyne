@@ -43,7 +43,12 @@ export default function LoginPage() {
             <div className="w-full max-w-md relative z-10">
                 {/* Logo */}
                 <div className="text-center mb-8">
-                    <Link href="/" className="inline-block">
+                    <Link href="/" className="inline-flex flex-col items-center gap-4">
+                        <img
+                            src="/logo.png"
+                            alt="Exogram Logo"
+                            className="w-16 h-16 object-contain drop-shadow-[0_0_20px_rgba(249,115,22,0.4)]"
+                        />
                         <h1 className="text-4xl font-bold bg-gradient-to-r from-orange-400 to-teal-400 bg-clip-text text-transparent">
                             Exogram
                         </h1>

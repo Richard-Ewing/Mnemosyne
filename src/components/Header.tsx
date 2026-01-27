@@ -25,8 +25,12 @@ export default function Header() {
         <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-[#0a0a0f]/80 border-b border-white/5">
             <div className="max-w-7xl mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
                 <Link href="/" className="flex items-center gap-3 group">
-                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center shadow-lg shadow-violet-500/25 group-hover:shadow-violet-500/40 transition-shadow">
-                        <span className="text-xl font-bold text-white">E</span>
+                    <div className="w-10 h-10 relative">
+                        <img
+                            src="/logo.png"
+                            alt="Exogram Logo"
+                            className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(249,115,22,0.5)]"
+                        />
                     </div>
                     <span className="text-xl font-semibold tracking-tight hidden sm:inline text-white">
                         Exogram
