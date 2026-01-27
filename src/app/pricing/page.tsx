@@ -63,7 +63,7 @@ export default function PricingPage() {
 
                     {/* PRO TIER */}
                     <AnimatedSection delay={0.2} className="lg:-mt-4">
-                        <ShineBorder duration={3} className="h-full rounded-3xl bg-black !border-orange-500/50">
+                        <ShineBorder duration={3} className="h-full rounded-3xl bg-black !border-orange-500/50" borderRadius="24px">
                             <div className="p-6 h-full flex flex-col relative">
                                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-orange-500 to-teal-500 text-white text-[10px] uppercase font-bold px-3 py-1 rounded-full tracking-wide shadow-lg shadow-orange-500/20">
                                     Most Popular
