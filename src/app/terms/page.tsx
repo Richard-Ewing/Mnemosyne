@@ -185,10 +185,10 @@ export default function TermsPage() {
                         For questions about these Terms, please contact us at:
                         <br />
                         <a
-                            href="mailto:legal@mnemosyne.app"
+                            href="mailto:legal@exogram.ai"
                             className="text-violet-400 hover:text-violet-300 transition-colors"
                         >
-                            legal@mnemosyne.app
+                            legal@exogram.ai
                         </a>
                     </p>
                 </section>

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ========================================
-   MNEMOSYNE DESIGN SYSTEM
+   EXOGRAM DESIGN SYSTEM
    Darker text, fluid typography, scroll animations
    ======================================== */
 
@@ -48,11 +48,15 @@ html {
 }
 
 @media (min-width: 3840px) {
-  html { font-size: clamp(24px, 0.6vw, 48px); }
+  html {
+    font-size: clamp(24px, 0.6vw, 48px);
+  }
 }
 
 @media (min-width: 7680px) {
-  html { font-size: clamp(32px, 0.5vw, 64px); }
+  html {
+    font-size: clamp(32px, 0.5vw, 64px);
+  }
 }
 
 /* ========================================
@@ -73,11 +77,25 @@ html {
 }
 
 /* Staggered delays for child elements */
-.animate-on-scroll.delay-1 { transition-delay: 0.1s; }
-.animate-on-scroll.delay-2 { transition-delay: 0.2s; }
-.animate-on-scroll.delay-3 { transition-delay: 0.3s; }
-.animate-on-scroll.delay-4 { transition-delay: 0.4s; }
-.animate-on-scroll.delay-5 { transition-delay: 0.5s; }
+.animate-on-scroll.delay-1 {
+  transition-delay: 0.1s;
+}
+
+.animate-on-scroll.delay-2 {
+  transition-delay: 0.2s;
+}
+
+.animate-on-scroll.delay-3 {
+  transition-delay: 0.3s;
+}
+
+.animate-on-scroll.delay-4 {
+  transition-delay: 0.4s;
+}
+
+.animate-on-scroll.delay-5 {
+  transition-delay: 0.5s;
+}
 
 /* Capsule fade-in from different directions */
 .animate-fade-up {
@@ -132,7 +150,7 @@ html {
 }
 
 .capsule-glow {
-  box-shadow: 
+  box-shadow:
     0 0 20px rgba(139, 92, 246, 0.2),
     0 0 40px rgba(139, 92, 246, 0.1),
     inset 0 0 20px rgba(139, 92, 246, 0.05);
@@ -183,15 +201,21 @@ html {
 }
 
 @media (min-width: 768px) {
-  .container-fluid { padding: 0 2rem; }
+  .container-fluid {
+    padding: 0 2rem;
+  }
 }
 
 @media (min-width: 1280px) {
-  .container-fluid { padding: 0 3rem; }
+  .container-fluid {
+    padding: 0 3rem;
+  }
 }
 
 @media (min-width: 3840px) {
-  .container-fluid { max-width: min(80vw, 2800px); }
+  .container-fluid {
+    max-width: min(80vw, 2800px);
+  }
 }
 
 /* ========================================
@@ -261,9 +285,13 @@ html {
 }
 
 @media (min-width: 768px) {
-  .section { padding: 7rem 0; }
+  .section {
+    padding: 7rem 0;
+  }
 }
 
 @media (min-width: 1280px) {
-  .section { padding: 9rem 0; }
+  .section {
+    padding: 9rem 0;
+  }
 }

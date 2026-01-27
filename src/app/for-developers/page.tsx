@@ -103,20 +103,20 @@ export default function ForDevelopers() {
                             <pre className="text-sm md:text-base overflow-x-auto">
                                 <code className="text-gray-300">
                                     {`# Store a semantic entry
-response = mnemosyne.store(
+response = exogram.store(
     content="Product launch is scheduled for March 15th",
     source="planning-doc",
     tags=["product", "launch"]
 )
 
 # Check for contradictions
-result = mnemosyne.check_fact(
+result = exogram.check_fact(
     claim="Product launch is April 1st"
 )
 # Returns: { "conflict": true, "competing_claims": [...] }
 
 # Reference context for AI
-context = mnemosyne.get_context(
+context = exogram.get_context(
     topic="product launch",
     depth=10
 )`}
@@ -149,7 +149,7 @@ context = mnemosyne.get_context(
                             Get API Access
                         </Link>
                         <a
-                            href="https://api.themnemosyne.io/docs"
+                            href="https://api.exogram.ai/docs"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn-secondary"
