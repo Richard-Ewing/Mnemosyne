@@ -51,4 +51,4 @@ Disallow: /dashboard/
 Disallow: /auth/
 
 # Sitemap location
-Sitemap: https://themnemosyne.app/sitemap.xml
+Sitemap: https://exogram.ai/sitemap.xml

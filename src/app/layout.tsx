@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Header from "@/components/Header";
+import { AuthProvider } from "@/context/AuthContext";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -138,11 +139,13 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased bg-[#0a0a0f] text-white min-h-screen`}
       >
-        {/* Navigation */}
-        <Header />
+        <AuthProvider>
+          {/* Navigation */}
+          <Header />
 
-        {/* Main Content */}
-        <main className="pt-24 lg:pt-20">{children}</main>
+          {/* Main Content */}
+          <main className="pt-24 lg:pt-20">{children}</main>
+        </AuthProvider>
 
         {/* Footer */}
         <footer className="border-t border-white/5 mt-32">

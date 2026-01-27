@@ -99,7 +99,7 @@ export default function TermsPage() {
                     <p className="text-gray-300 leading-relaxed">
                         <strong className="text-white">Our Property:</strong> The Service,
                         including VL-JEPA technology, algorithms, interfaces, and
-                        documentation, is owned by Mnemosyne and protected by
+                        documentation, is owned by Exogram and protected by
                         intellectual property laws.
                     </p>
                 </section>
@@ -133,7 +133,7 @@ export default function TermsPage() {
                         8. Limitation of Liability
                     </h2>
                     <p className="text-gray-300 leading-relaxed">
-                        TO THE MAXIMUM EXTENT PERMITTED BY LAW, MNEMOSYNE SHALL NOT BE
+                        TO THE MAXIMUM EXTENT PERMITTED BY LAW, EXOGRAM SHALL NOT BE
                         LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR
                         PUNITIVE DAMAGES, INCLUDING LOSS OF PROFITS, DATA, OR GOODWILL,
                         ARISING FROM YOUR USE OF THE SERVICE. OUR TOTAL LIABILITY SHALL
@@ -147,7 +147,7 @@ export default function TermsPage() {
                         9. Indemnification
                     </h2>
                     <p className="text-gray-300 leading-relaxed">
-                        You agree to indemnify and hold harmless Mnemosyne and its
+                        You agree to indemnify and hold harmless Exogram and its
                         affiliates from any claims, damages, or expenses arising from
                         your use of the Service, violation of these Terms, or
                         infringement of any third-party rights.

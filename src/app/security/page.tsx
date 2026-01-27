@@ -43,7 +43,7 @@ export default function SecurityPage() {
                 {/* SHARPENING LINE C */}
                 <BlurIn delay={0.6}>
                     <p className="mt-8 text-lg font-semibold text-white border-t border-white/10 pt-8 inline-block px-8">
-                        You can explain every answer or refuse to give one. <span className="text-teal-400">There is no third option.</span>
+                        Exogram is an impartial witness. It does not "think." It does not "decide." It records. <span className="text-teal-400">It proves.</span>
                     </p>
                 </BlurIn>
             </section>

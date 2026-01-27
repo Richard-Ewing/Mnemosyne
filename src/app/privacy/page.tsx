@@ -185,10 +185,10 @@ export default function PrivacyPage() {
                         To exercise these rights, use the Dashboard settings or contact
                         us at{" "}
                         <a
-                            href="mailto:privacy@mnemosyne.app"
+                            href="mailto:privacy@exogram.ai"
                             className="text-violet-400 hover:text-violet-300 transition-colors"
                         >
-                            privacy@mnemosyne.app
+                            privacy@exogram.ai
                         </a>
                         .
                     </p>
@@ -259,7 +259,7 @@ export default function PrivacyPage() {
                         10. Children&apos;s Privacy
                     </h2>
                     <p className="text-gray-300 leading-relaxed">
-                        Mnemosyne is not intended for users under 16 years of age. We do
+                        Exogram is not intended for users under 16 years of age. We do
                         not knowingly collect data from children. If we learn that we
                         have collected data from a child, we will delete it promptly.
                     </p>
@@ -284,10 +284,10 @@ export default function PrivacyPage() {
                         For privacy-related inquiries, contact our Data Protection team:
                         <br />
                         <a
-                            href="mailto:privacy@mnemosyne.app"
+                            href="mailto:privacy@exogram.ai"
                             className="text-violet-400 hover:text-violet-300 transition-colors"
                         >
-                            privacy@mnemosyne.app
+                            privacy@exogram.ai
                         </a>
                     </p>
                 </section>
