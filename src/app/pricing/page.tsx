@@ -1,13 +1,13 @@
 'use client';
 
-import { AnimatedSection, Capsule, GlowCard } from "../../components/animations";
+import { AnimatedSection, Capsule, GlowCard } from "../components/animations";
 import {
     SparklesText,
     Particles,
     BlurIn,
     ShineBorder,
     AnimatedGradientText
-} from "../../components/magic-ui";
+} from "../components/magic-ui";
 import Link from "next/link";
 
 export default function PricingPage() {

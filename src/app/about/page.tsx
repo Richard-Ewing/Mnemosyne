@@ -1,13 +1,13 @@
 'use client';
 
-import { AnimatedSection, Capsule, GlowCard } from "../../components/animations";
+import { AnimatedSection, Capsule, GlowCard } from "../components/animations";
 import {
     SparklesText,
     Particles,
     BlurIn,
     BorderBeam,
     AnimatedGradientText
-} from "../../components/magic-ui";
+} from "../components/magic-ui";
 
 export default function AboutPage() {
     return (
@@ -41,7 +41,7 @@ export default function AboutPage() {
                     <AnimatedSection delay={0.4}>
                         <BorderBeam duration={4}>
                             <div className="p-10 bg-black/40 text-center rounded-xl">
-                                <SparklesText className="text-3xl md:text-4xl font-bold" text="Exogram makes AI systems honest by construction." />
+                                <SparklesText className="text-3xl md:text-4xl font-bold">Exogram makes AI systems honest by construction.</SparklesText>
                             </div>
                         </BorderBeam>
                     </AnimatedSection>

@@ -1,13 +1,13 @@
 'use client';
 
-import { AnimatedSection, Capsule, GlowCard } from "../../components/animations";
+import { AnimatedSection, Capsule, GlowCard } from "../components/animations";
 import {
     SparklesText,
     Particles,
     BlurIn,
     BorderBeam,
     AnimatedGradientText
-} from "../../components/magic-ui";
+} from "../components/magic-ui";
 import Link from "next/link";
 
 export default function SecurityPage() {
@@ -55,7 +55,7 @@ export default function SecurityPage() {
                         <div className="text-3xl md:text-4xl font-bold space-y-4 text-teal-400/90">
                             <AnimatedGradientText className="text-gray-400">We do not infer.</AnimatedGradientText>
                             <AnimatedGradientText className="text-gray-400">We do not guess.</AnimatedGradientText>
-                            <SparklesText className="text-teal-400" text="We record." />
+                            <SparklesText className="text-teal-400">We record.</SparklesText>
                         </div>
                     </div>
                 </AnimatedSection>

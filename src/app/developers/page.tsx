@@ -1,13 +1,13 @@
 'use client';
 
-import { AnimatedSection, Capsule, GlowCard } from "../../components/animations";
+import { AnimatedSection, Capsule, GlowCard } from "../components/animations";
 import {
     SparklesText,
     Particles,
     BlurIn,
     BorderBeam,
     AnimatedGradientText
-} from "../../components/magic-ui";
+} from "../components/magic-ui";
 import Link from "next/link";
 
 export default function DevelopersPage() {
@@ -142,7 +142,7 @@ Authorization: Bearer YOUR_API_KEY
                     </AnimatedSection>
 
                     <AnimatedSection delay={0.4}>
-                        <BorderBeam colorFrom="#F97316" colorTo="#14B8A6">
+                        <BorderBeam>
                             <div className="p-8 bg-black/40">
                                 <div className="flex gap-2 mb-4">
                                     <div className="w-3 h-3 rounded-full bg-red-500/50"></div>
