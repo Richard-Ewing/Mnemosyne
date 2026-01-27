@@ -63,33 +63,34 @@ export default function PricingPage() {
 
                     {/* PRO TIER */}
                     <AnimatedSection delay={0.2} className="lg:-mt-4">
-                        <ShineBorder duration={3} className="h-full rounded-3xl bg-black !border-orange-500/50" borderRadius="24px">
-                            <div className="p-6 h-full flex flex-col relative">
-                                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-orange-500 to-teal-500 text-white text-[10px] uppercase font-bold px-3 py-1 rounded-full tracking-wide shadow-lg shadow-orange-500/20">
-                                    Most Popular
-                                </div>
-
-                                <h3 className="text-xl font-bold mb-2 text-white mt-2">Pro</h3>
-                                <div className="text-4xl font-bold mb-6 text-white">$29<span className="text-lg text-gray-400 font-normal">/mo</span></div>
-
-                                <ul className="space-y-3 text-gray-300 mb-8 text-sm flex-1">
-                                    <li className="flex items-center gap-2"><span className="text-orange-400">✓</span> Unlimited facts</li>
-                                    <li className="flex items-center gap-2"><span className="text-orange-400">✓</span> Unlimited queries</li>
-                                    <li className="flex items-center gap-2"><span className="text-orange-400">✓</span> Chrome Extension</li>
-                                    <li className="flex items-center gap-2">✓ 3 API keys</li>
-                                    <li className="flex items-center gap-2">✓ 10K API calls/month</li>
-                                    <li className="flex items-center gap-2">✓ Team sharing (3 members)</li>
-                                </ul>
-
-                                <Link
-                                    href="/signup"
-                                    className="block w-full text-center px-4 py-3 bg-gradient-to-r from-orange-500 to-teal-500 hover:opacity-90 rounded-xl font-semibold transition text-white shadow-lg shadow-orange-500/20"
-                                >
-                                    Start Trial
-                                </Link>
-                                <p className="text-xs text-gray-500 mt-4 text-center">14-day free trial</p>
+                        <div className="relative h-full">
+                            <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-orange-500 to-teal-500 text-white text-[10px] uppercase font-bold px-3 py-1 rounded-full tracking-wide shadow-lg shadow-orange-500/20 z-20">
+                                Most Popular
                             </div>
-                        </ShineBorder>
+                            <ShineBorder duration={3} className="h-full rounded-3xl bg-black !border-orange-500/50" borderRadius="24px">
+                                <div className="p-6 h-full flex flex-col relative">
+                                    <h3 className="text-xl font-bold mb-2 text-white mt-2">Pro</h3>
+                                    <div className="text-4xl font-bold mb-6 text-white">$29<span className="text-lg text-gray-400 font-normal">/mo</span></div>
+
+                                    <ul className="space-y-3 text-gray-300 mb-8 text-sm flex-1">
+                                        <li className="flex items-center gap-2"><span className="text-orange-400">✓</span> Unlimited facts</li>
+                                        <li className="flex items-center gap-2"><span className="text-orange-400">✓</span> Unlimited queries</li>
+                                        <li className="flex items-center gap-2"><span className="text-orange-400">✓</span> Chrome Extension</li>
+                                        <li className="flex items-center gap-2">✓ 3 API keys</li>
+                                        <li className="flex items-center gap-2">✓ 10K API calls/month</li>
+                                        <li className="flex items-center gap-2">✓ Team sharing (3 members)</li>
+                                    </ul>
+
+                                    <Link
+                                        href="/signup"
+                                        className="block w-full text-center px-4 py-3 bg-gradient-to-r from-orange-500 to-teal-500 hover:opacity-90 rounded-xl font-semibold transition text-white shadow-lg shadow-orange-500/20"
+                                    >
+                                        Start Trial
+                                    </Link>
+                                    <p className="text-xs text-gray-500 mt-4 text-center">14-day free trial</p>
+                                </div>
+                            </ShineBorder>
+                        </div>
                     </AnimatedSection>
 
                     {/* DEVELOPER TIER */}
